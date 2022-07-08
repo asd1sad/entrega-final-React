@@ -4,7 +4,7 @@ import { useCartContext } from '../../Context/CartContext'
 
  
 export const CartWidget = () => {
-    
+    // ! el talle tiene que recibir
     const {totalQuantity} = useCartContext()
 
     return (

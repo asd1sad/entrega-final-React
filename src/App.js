@@ -36,10 +36,3 @@ export default App;
 
 
 
-
-// ! NOTAS
-// class = className
-// {} se escribe js adentro
-// html va en camel case _ fontSize
-// elementos tienen que estar cerrados _ img />
-// App punto mas alto de la aplicacion

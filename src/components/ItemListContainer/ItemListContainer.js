@@ -21,17 +21,3 @@ export const ItemListContainer = () => {
 }
 
 
-// pedirDatos()
-// .then((resp) => {
-//     if (!categoryId) {
-//         setItems( resp )
-//     } else {
-//         setItems( resp.filter((item) => item.categoria === categoryId) )
-//     }
-// })
-// .catch((error) => {
-//     console.log('ERROR', error)
-// })
-// .finally(() => {
-//     setLoading(false)
-// })

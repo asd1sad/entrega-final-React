@@ -11,12 +11,8 @@ export const Nosotros = ( {titulo = 'chavez x defecto', content = 'wey x defecto
 
     return (
             <section className="nosotros">
-
-            <h2 className="nosotros_title">{titulo}</h2>
-      
-
-            <p>{content}</p>
-
+                <h2 className="nosotros_title">{titulo}</h2>
+                <p>{content}</p>
             </section>
     ) 
 }

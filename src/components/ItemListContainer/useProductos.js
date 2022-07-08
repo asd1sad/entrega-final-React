@@ -17,6 +17,7 @@ export const useProductos = () => {
         // 1 armar la referencia
         const productosRef = collection(db , 'productos')
         const q = categoryId ? query(productosRef, where('categoria', '==', categoryId)) : productosRef
+
         // 2 (async) llamar a Firebase con la referencia anterior
         getDocs(q)
             .then((resp) => {
@@ -26,13 +27,11 @@ export const useProductos = () => {
                         ...doc.data()
                     }
                 }) 
-                // console.log(newItems)
                 setItems( newItems )
             })
             .finally(() => {
                 setLoading(false)
         })
-
 
     }, [categoryId])
 

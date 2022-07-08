@@ -5,10 +5,6 @@ import './LoginScreen.scss'
 const LoginScreen = () => {
     
     const {login, error} = useAuthContext()
-
-    // console.log(error.email)
-    // console.log(error.password)
-
     const [values, setValues] = useState({
         email:'',
         password:''

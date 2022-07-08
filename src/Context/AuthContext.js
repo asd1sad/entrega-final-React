@@ -1,4 +1,4 @@
-import { createContext, useState,useContext } from "react"
+import { createContext, useState, useContext } from "react"
  
 const mockUsers = [
     {email: 'silvestre@bosch.com', pass: 'coderhouse'},
@@ -20,8 +20,6 @@ export const AuthProvider = ({children}) => {
     })
 
     const [error, setError] = useState({})
-
-    // console.log(auth)
 
     const login = (values) => {
         const {email, password} = values

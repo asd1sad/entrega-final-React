@@ -10,9 +10,6 @@ export const CartProvider = ({children}) => {
     const [cart, setCart] = useState([])
 
     const addItem = (item) => {
-        //   const newCart = cart.slice()
-        //   newCart.push(item)
-        //  setCart( [ newCart] )
         setCart([...cart, item])
     }
 

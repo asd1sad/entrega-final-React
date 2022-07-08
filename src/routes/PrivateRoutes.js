@@ -1,5 +1,5 @@
 import { Nosotros } from '../components/Nosotros/Nosotros'
-import { Contacto } from '../ejemplos/Contacto/Contacto'
+import { Contacto } from '../components/Contacto/Contacto'
 import { Navbar } from '../components/Navbar/Navbar'; 
 import { ItemListContainer } from '../components/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from '../components/ItemDetailContainer/ItemDetailContainer';

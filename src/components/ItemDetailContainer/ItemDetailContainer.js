@@ -14,11 +14,11 @@ export const ItemDetailContainer = () => {
 
     useEffect(() => {
         setLoading(true)
+
         // 1 armar la referencia
         const docRef = doc(db , 'productos', itemId)
+
         // 2 (async) llamar a Firestore
-
-
         getDoc(docRef)
             .then((doc) => {
                 setItem(  {id: doc.id, ...doc.data()} )
