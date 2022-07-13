@@ -38,7 +38,7 @@ import { Formulario } from './Formulario,'
         
         productos.docs.forEach((doc) => {
             const itemToUpdate = cart.find(prod => prod.id === doc.id)   
-                  
+                //   pruebo a ver que es el stock
             console.log(doc.data().stock)
             
             if (itemToUpdate.size.toLowerCase()  === 'x' &&  doc.data().stock.s  >= 0) {
@@ -46,29 +46,10 @@ import { Formulario } from './Formulario,'
                     batch.update(doc.ref, {
                         stock: doc.data().stock.s - itemToUpdate.cantidad
                     })
-            // } else if (itemToUpdate.size.toLowerCase()  === 'm' &&  doc.data().stock.m  >= 0) {
-            //     batch.update(doc.ref, {
-            //         stock: doc.data().stock.m - itemToUpdate.cantidad
-            // })
-            // }else if (doc.data().stock.l - itemToUpdate.cantidad){
-            //     batch.update(doc.ref, {
-            //     stock: doc.data().stock.l - itemToUpdate.cantidad
-            //     })
-             
-            // console.log(doc.data().stock) 
-            // console.log( itemToUpdate.cantidad) 
-
-        //         if ((doc.data().stock - itemToUpdate.cantidad) >= 0) {
-        //             batch.update(doc.ref, {
-        //                 stock: doc.data().stock - itemToUpdate.cantidad
-        //             })
-                    
-// batch.update(doc.ref, {
-                    //     stock: doc.data().stock.s - itemToUpdate.cantidad
-                    // })
+        
                 } else {
                     outOfStock.push(itemToUpdate)
-                    // console.log('noi fubcibi')
+                    console.log('no funciona')
                  }
             // }
         })
