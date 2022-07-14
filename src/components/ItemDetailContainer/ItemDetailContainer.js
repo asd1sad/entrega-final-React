@@ -28,6 +28,7 @@ export const ItemDetailContainer = () => {
         })
 
     }, [])
+ 
 
     return (
         <section className="container my-5">
@@ -52,14 +53,4 @@ export const ItemDetailContainer = () => {
 
 
 
-// pedirDatos()
-// .then((resp) => {
-//    setItem( resp.find((item) => item.id === Number(itemId)))
-// })
-// .catch((error) => {
-//     console.log('ERRORasdasdasd', error)
-// })
-// .finally(()=>{
-//     setLoading(false)
-// })
-//
+ 

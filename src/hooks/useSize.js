@@ -1,28 +1,14 @@
-import { useState } from "react"
-import { ItemDetailContainer } from '../components/ItemDetailContainer/ItemDetailContainer'
+// import { useState } from "react"
 
-export const useSize = () => {
-     const { item } = ItemDetailContainer
 
-    const [ size, setSize ] = useState('S')
-    
-    const s = () => setSize('S')
-    const m = () => setSize('M')
-    const l = () => setSize('L')
-        
-    const foundSize = () => {
-        setSize( item.stock.find( e =>  e === s || e === m || e === l) ) 
-    }
 
-    if (size === 'S') {
+// export const useSize = () => {
+ 
+//     const [ size, setSize ] = useState('S')
 
-    } else if (size === 'M') {
-        
-    } else {
+//     const handleSize = (e) => {
+//         setSize(e.target.value)
+//     }
 
-    }
-
-    return {
-        foundSize
-    }
-}
+//     return {size, handleSize}
+// }

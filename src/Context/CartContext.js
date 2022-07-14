@@ -1,5 +1,5 @@
 import {createContext,useContext,useState} from "react";
-
+  
 export const CartContext = createContext()
 
 export const useCartContext = () => {
@@ -31,6 +31,7 @@ export const CartProvider = ({children}) => {
     const removeItem = (id) => { 
         setCart( cart.filter((prod) => prod.id !== id) )
     }
+
     return ( 
         <CartContext.Provider value = {
             {
@@ -40,7 +41,7 @@ export const CartProvider = ({children}) => {
                 totalPrice,
                 totalQuantity,
                 emptyCart,
-                removeItem
+                removeItem,
             }
         } >
             {children}

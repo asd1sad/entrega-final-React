@@ -11,6 +11,7 @@ export const CartItem = () => {
                     <div key={item.id} className="my-2">
                         <h5>{item.nombre}</h5>
                         <p>Cantidad: {item.cantidad}</p>
+                        <p>Talle {item.size}</p> 
                         <h6>Precio: ${item.precio * item.cantidad}</h6>
                         <button onClick={ () => removeItem(item.id) } className="btn btn-danger"><BsFillTrashFill/></button>
                         <hr/>
@@ -18,3 +19,5 @@ export const CartItem = () => {
     ))
     )
 }
+
+// maneja el stock ahora

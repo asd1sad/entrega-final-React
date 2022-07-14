@@ -9,7 +9,7 @@ export const useProductos = () => {
     const [items, setItems] = useState([])
     const [loading, setLoading] = useState(true)
 
-    const { categoryId  } = useParams()
+    const { categoryId } = useParams()
 
     useEffect(() => {
         setLoading(true)
