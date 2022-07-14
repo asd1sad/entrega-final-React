@@ -61,17 +61,26 @@ import { Formulario } from './Formulario,'
             if (itemToUpdate.size.toLowerCase()  === 's' &&  doc.data().stock.s  >= 0) {
                 
                     batch.update(doc.ref, {
-                        stock: doc.data().stock.s - itemToUpdate.cantidad
+                        stock:{
+                        ...doc.data().stock,
+                         s: doc.data().stock.s - itemToUpdate.cantidad
+                        }    
                     })
 
             } else if (itemToUpdate.size.toLowerCase()  === 'm' &&  doc.data().stock.m  >= 0) {
                     batch.update(doc.ref, {
-                        stock: doc.data().stock.m - itemToUpdate.cantidad
+                        stock:{
+                            ...doc.data().stock,
+                             s: doc.data().stock.m - itemToUpdate.cantidad
+                            }   
             })
 
             }else if (itemToUpdate.size.toLowerCase()  === 'l' &&  doc.data().stock.m  >= 0){
                     batch.update(doc.ref, {
-                        stock: doc.data().stock.l - itemToUpdate.cantidad
+                        stock:{
+                            ...doc.data().stock,
+                             s: doc.data().stock.l - itemToUpdate.cantidad
+                            }   
                 })
              
  
